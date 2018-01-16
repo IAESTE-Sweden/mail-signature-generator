@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+input {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 1.1rem;
+}
+
+textarea.output {
+  width: 100%;
+  min-height: 430px;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.signature-form,
+.output-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+}
+
+.signature-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signature-form label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.signature-form label:first-of-type {
+  margin-top: 0;
+}
+
+.signature-form button {
+  font-size: 1.1rem;
+  background-color: #428bca;
+  color: #f9f9f9;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 0.7em;
+  margin-top: 10px;
+}
+
+.signature-form button:hover {
+  background-color: #5bc0de;
+}
+
+button#show-hide {
+  display: block;
+  margin: 5px auto;
+}
+
+.output-container {
+  border: 1px solid grey;
+  border-radius: 5px;
+  min-height: 450px;
+  overflow: hidden;
+}

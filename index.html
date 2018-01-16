@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mail signature generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <h1>Mailsignaturgenerator</h1>
+    <main>
+      <form class="signature-form">
+        <label>Ditt namn
+          <input name="name" type="text" placeholder="Namn Efternamn..." required />
+        </label>
+        <label>Post
+          <input name="position" type="text" placeholder="IT-koordinator..." required />
+        </label>
+        <label>Kontaktadress
+          <input name="mail" type="email" placeholder="example@domain.com..." required />
+        </label>
+        <label>Telefonnummer
+          <input name="phone" type="tel" placeholder="+46 712 34 56 78..." required />
+        </label>
+        <label>Utbildning/Examen
+          <input name="examina" type="text" placeholder="B.Sc. Software Engineering..." required />
+        </label>
+        <label>Skola
+          <input name="school" type="text" placeholder="Chalmers University of Technology..." required />
+        </label>
+        <button id="generate" type="submit">Generera signatur</button>
+      </form>
+      <section class="output-container">
+        <button id="show-hide">Visa/dölj HTML</button>
+        <textarea readonly id="output" class="output" style="display: none"></textarea>
+        <div id="preview" class="output"></div>
+        <button id="copy" style="display: none">Kopiera signatur</button>
+      </section>
+    <main>
+    <script src="js/signature.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
