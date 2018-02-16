@@ -1,6 +1,7 @@
 let generateButton, preview, output, copyButton, showHide, lastSignature;
 
 document.addEventListener("DOMContentLoaded", () => {
+  new Clipboard('#copy-btn');
   generateButton = document.querySelector("#generate");
   showHide = document.querySelector("#show-hide");
   preview = document.querySelector("#preview");

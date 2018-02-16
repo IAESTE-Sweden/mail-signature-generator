@@ -34,9 +34,10 @@
         <button id="show-hide">Visa/dölj HTML</button>
         <textarea readonly id="output" class="output" style="display: none"></textarea>
         <div id="preview" class="output"></div>
-        <button id="copy" style="display: none">Kopiera signatur</button>
+        <button id="copy-btn" data-clipboard-target="#preview">Kopiera signatur</button>
       </section>
-    <main>
+    </main>
+    <script src="dist/clipboard.min.js"></script>
     <script src="js/signature.js"></script>
     <script src="js/main.js"></script>
   </body>
